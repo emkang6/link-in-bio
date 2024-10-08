@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <title>Emily Kang's links</title>
     <style>
+      /*
       * {
         border: 1px red dashed;
       }
+      */
 
       html {
         min-height: 100%;
@@ -18,6 +24,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background: #f2c7c7;
+        font-family: Lato;
       }
 
       .headshot {
@@ -36,6 +43,12 @@
       .item {
         background-color: rgb(236, 239, 238);
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.25)
       }
 
       .main-container {
@@ -51,12 +64,23 @@
       .name-row {
         margin-bottom: 30px;
         text-align: center;
+        font-family: Georgia;
+        font-size: 30px;
       }
 
       .social-icons-row {
         margin-bottom: 30px;
         display: flex;
         justify-content: space-around;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      a {
+        text-decoration: none;
       }
 
 
@@ -72,25 +96,25 @@
         Emily Kang
       </div>
       <div class="social-icons-row">
-        <a href="https://github.com/emkang6" target="_blank"> GitHub</a>
-        <a href="https://www.instagram.com/hyewonkang_emily/" target="_blank"> Instagram</a>
-        <a href="https://www.linkedin.com/in/emilykang2001/" target="_blank"> LinkedIn</a>
+        <a href="https://github.com/emkang6" target="_blank"> <i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hyewonkang_emily/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/emilykang2001/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
 
       </div> <!--Social icons close-->
       <div class="links-row">
         <div class="item">
           <img class="icon" src="movie.jpg" alt="movie icon">
-          <a href="https://www.imdb.com/title/tt0449059/" target="_blank"> Favorite Movie</a>
+          <a class="link-text" href="https://www.imdb.com/title/tt0449059/" target="_blank"> Favorite Movie</a>
         </div>
 
         <div class="item">
           <img class="icon" src="music.jpg" alt="playlist icon">
-          <a href="https://www.youtube.com/watch?v=-nZBQDGYUxw&t=2419s" target="_blank"> Favorite Playlist</a>
+          <a class="link-text" href="https://www.youtube.com/watch?v=-nZBQDGYUxw&t=2419s" target="_blank"> Favorite Playlist</a>
         </div>
 
         <div class="item">
           <img class="icon" src="book.jpg" alt="book icon">
-          <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice" target="_blank"> Favorite Book</a>
+          <a class="link-text" href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice" target="_blank"> Favorite Book</a>
         </div>
 
       </div> <!--Links Row Close-->
